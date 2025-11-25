@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/procurement.css">
 </head>
 <body>
     <h1>Procurement Form</h1>
     <form action="/submit" method="POST">
+        <fieldset id="field1"> 
+            <legend>Supplier Information</legend>
 <label>Supplier Name:</label>
-<input type="text" name="supplier_name"><br>
+<input type="text" name="supplier_name" placeholder="Enter Supplier's name"><br>
 <label>Supplier Contact:</label>
-<input type="text" name="supplier_contact"><br>
+<input type="tel" name="supplier_contact" placeholder="Enter Supplier's contact"><br>
+        </fieldset>
 <label>Purchase Date:</label>
-<input type="date" name="purchase_date"><br>
+<input type="date" name="purchase_date"><br><br>
 <label>Invoice number:</label>
-<input type="text" name="invoice_number"><br>
+<input type="text" name="invoice_number"><br><br>
+
+<fieldset class="product"> 
+    <legend>Product Details</legend>
 <label>Product Name:</label>
-<input type="text" name="product_name"><br>
+<input type="text" name="product_name" placeholder="Enter product's name"><br>
 <label for="category">Category:</label>
 <select name="category" id="category">
     <option value="">Select a category</option>
@@ -26,15 +33,18 @@
     <option value="stationery">Stationery</option>
     <option value="groceries">Groceries</option>
     <option value="other">Other</option>
-</select><br>
+</select><br><br>
 
 <label>Quantity:</label>
 <input type="number" name="quantity"><br>
 <label>Unit Price:</label>
 <input type="number" step="0.01" name="unit_price"><br>
 <label>Total Amount:</label>
-<input type="number" name="total_amount" readonly><br>
+<input type="number" name="total_amount" readonly ><br>
+</fieldset>
 
+<fieldset class="payment"> 
+    <legend>Payment Information</legend>
 <label>Payment Method:</label>
 <input type="radio" name="payment_method" value="Cash"> Cash
 <input type="radio" name="payment_method" value="Mobilemoney"> Mobilemoney
@@ -44,17 +54,16 @@
 <input type="radio" name="payment_method" value="Paid"> Paid
 <input type="radio" name="payment_method" value="Pending"> Pending
 <input type="radio" name="payment_method" value="Partial"> Partial<br>
+</fieldset>
+
 <label>Delivery Date:</label>
-<input type="date" name="delivery_date"><br>
+<input type="date" name="delivery_date"><br><br>
 <label>Notes/Description:</label>
-<textarea name="notes_description"></textarea><br>
+<textarea name="notes_description"></textarea><br><br>
 <label>Receipt Upload:</label>
-<input type="file" name="receipt_upload"><br>
-<button>Submit</button><br>
+<input type="file" name="receipt_upload"><br><br>
+<button>Submit</button><br><br>
 <button>Reset</button>
-
-
-
-    </form>
+  </form>
 </body>
 </html>

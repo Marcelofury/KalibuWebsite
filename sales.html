@@ -4,13 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/sales.css">
 </head>
 <body>
     <form action="/submit" method="POST"></form>
     <h1>Sales Form</h1>
-    <label>Sale ID</label>
-    <input type="text" name="sale_id" readonly><br>
+    <label>Sale ID:</label>
+    <input type="text" name="sale_id" readonly><br><br>
 
+    <label>Sales date and Time:</label>
+    <input type="datetime-local" name="sales_datetime"><br><br>
+
+    <fieldset> 
+    <legend>Customer Information</legend>
+    <label>Customer Name:</label>
+    <input type="text" name="customer_name" placeholder="Enter your fullname"><br><br>
+    <label>Customer Phone:</label>
+    <input type="tel" name="customer_phone" placeholder="+256794353689"><br><br>
+    <label>Customer Email:</label>
+    <input type="email" name="customer_email" placeholder="amani@gmail.com"><br><br>
+    <label>Customer Type:</label>
+    <input type="radio" name="customer_type" value="walk-in"> walk-in
+    <input type="radio" name="customer_type" value="regular"> regular
+    <input type="radio" name="customer_type" value="credit customer"> credit customer<br><br>
+</fieldset><br>
+
+
+<fieldset class="product">
+    <legend>Product/Item Details</legend>
+    <label>Product/Item name</label>
+    <input type="text" name="product_name"><br><br>
+    <label for="category">Category:</label>
+<select name="category" id="category">
+    <option value="">Select a category</option>
+    <option value="electronics">Electronics</option>
+    <option value="furniture">Furniture</option>
+    <option value="stationery">Stationery</option>
+    <option value="groceries">Groceries</option>
+    <option value="other">Other</option>
+</select><br><br>
+
+    <label>Quantity Sold:</label>
+    <input type="number" name="quantity_sold"><br><br>
+    <label>Unit Price:</label>
+    <input type="number" step="0.01" name="unit_price"><br><br>
+
+     <label>Discount Percentage:</label>
+    <input type="number" step="0.01" name="discount_percentage" min="0" max="100"><br><br>
+    <label>Sub Total:</label>
+    <input type="number" name="sub_total" readonly><br><br>
+
+    <label>Tax/VAT:</label>
+    <input type="number" name="tax_vat" readonly><br><br>
+    <label>Total Amount:</label>
+    <input type="number" name="total_amount" readonly><br><br>
+</fieldset><br>
+
+<fieldset>
+    <legend>Payment Information</legend>
+    <label>Payment Method:</label>
+<input type="radio" name="payment_method" value="Cash"> Cash
+<input type="radio" name="payment_method" value="Mobilemoney"> Mobilemoney
+<input type="radio" name="payment_method" value="Bank Transfer"> Bank Transfer
+<input type="radio" name="payment_method" value="Credit "> Credit <br><br>
+<label>Amount Paid:</label>
+<input type="number" name="amount_paid"><br><br>
+<label>Change/Balance:</label>
+<input type="number" name="change_balance" readonly><br>
+</fieldset><br>
+
+<label>Salesperson:</label>
+<input type="text" name="salesperson" placeholder="Enter salesperson's name"><br><br>
+<label>Additional Notes:</label><br>
+<textarea name="additional_notes"></textarea><br><br>
+<button>Submit</button><br><br>
+<button>Clear Form</button><br>
 
 </form>
 </body>

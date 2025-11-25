@@ -1,0 +1,54 @@
+body{
+    background: rgb(12, 155, 180);
+    padding:10px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+    font-weight: normal;
+    display:grid;
+    }
+    form{
+    background-color: rgb(12, 155, 180;
+border-radius: 10px;
+border: rgb(11, 9, 9) 6px solid;}
+fieldset{
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 15px;
+    margin-right: 500px;
+
+ 
+}
+
+.product{
+    border: 2px solid rgb(6, 13, 6);
+    padding: 10px;
+    margin-bottom: 15px;
+ 
+}
+.payment{
+    border: 2px solid rgb(6, 13, 6);
+    padding: 10px;
+    margin-bottom: 15px;
+ 
+}
+button{
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: rgb(0, 200, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: #22671c 2px 2px 5px;
+    cursor: pointer;}
+button:hover{
+    background-color: rgb(0, 200, 33);}
+input, textarea{
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px #dddddd;
+}
+
+input:hover, textarea:hover{
+    border: 1px solid #777;
+}
